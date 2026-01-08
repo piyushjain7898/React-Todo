@@ -12,7 +12,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const PRIMARY = '#9395D3';
 
-/* -------- DEFAULT TODOS (PRE-FILLED) -------- */
+
 const DEFAULT_TODOS = [
   {
     id: '1',
@@ -83,7 +83,7 @@ export default function App() {
     ));
   };
 
-  /* ---------------- ADD / EDIT SCREEN ---------------- */
+ 
   if (showAdd) {
     return (
       <View style={styles.container}>
@@ -119,7 +119,7 @@ export default function App() {
     );
   }
 
-  /* ---------------- HOME SCREEN ---------------- */
+ 
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={PRIMARY} />
@@ -148,7 +148,7 @@ export default function App() {
               <Text style={styles.sub}>{item.detail}</Text>
             </View>
 
-            {/* ACTION BUTTONS */}
+           
             <View style={styles.actions}>
               <TouchableOpacity
                 style={styles.actionBtn}
@@ -178,7 +178,7 @@ export default function App() {
   );
 }
 
-/* ---------------- STYLES ---------------- */
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
